@@ -12,4 +12,5 @@ This will build and spawn a container running the application. Use a browser or 
 
 # Useful Links:
 [Flask Documentation](http://flask.pocoo.org/docs/0.12/)
+
 [Potential Container Using Nginx/uwsgi](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/)
