@@ -8,5 +8,4 @@ WORKDIR /interview_api
 
 RUN pip install Flask
 
-ENTRYPOINT ["python"]
-CMD ["interview_api/main.py"]
+ENTRYPOINT ["python", "interview_api/main.py"]
