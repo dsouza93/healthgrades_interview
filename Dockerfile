@@ -1,7 +1,12 @@
-FROM tiangolo/uwsgi-nginx-flask:python3.6
-
-ENV LISTEN_PORT 3000
+FROM python:3.6 
 
 EXPOSE 3000
 
-COPY ./app /app
+COPY . ./app
+
+WORKDIR /app
+
+RUN pip install Flask
+
+ENTRYPOINT ["python"]
+CMD ["app/main.py"]
