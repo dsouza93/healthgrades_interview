@@ -2,11 +2,11 @@ FROM python:3.6
 
 EXPOSE 3000
 
-COPY . ./app
+COPY . ./interview_api
 
-WORKDIR /app
+WORKDIR /interview_api
 
 RUN pip install Flask
 
 ENTRYPOINT ["python"]
-CMD ["app/main.py"]
+CMD ["interview_api/main.py"]
